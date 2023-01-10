@@ -11,9 +11,11 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
+            VStack {
                 HomeHeaderView()
-                HomeMbtiTypes()
+                ScrollView(.vertical) {
+                    HomeMbtiTypes()
+                }
             }
         }
     }
