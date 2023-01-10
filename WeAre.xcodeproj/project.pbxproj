@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		FB464A782966C2C0008AD1B5 /* WeAreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A772966C2C0008AD1B5 /* WeAreApp.swift */; };
-		FB464A7A2966C2C0008AD1B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A792966C2C0008AD1B5 /* ContentView.swift */; };
+		FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A792966C2C0008AD1B5 /* MainTabView.swift */; };
 		FB464A7C2966C2C1008AD1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB464A7B2966C2C1008AD1B5 /* Assets.xcassets */; };
 		FB464A7F2966C2C1008AD1B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB464A7E2966C2C1008AD1B5 /* Preview Assets.xcassets */; };
+		FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A85296BFC2B008AD1B5 /* Tab.swift */; };
+		FB464A8A296BFCEC008AD1B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A89296BFCEC008AD1B5 /* HomeView.swift */; };
+		FB464A8D296BFE18008AD1B5 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A8C296BFE18008AD1B5 /* HomeHeaderView.swift */; };
+		FB464A8F296C011A008AD1B5 /* HomeMbtiTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A8E296C011A008AD1B5 /* HomeMbtiTypes.swift */; };
+		FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A90296C0219008AD1B5 /* MbtiTypes.swift */; };
+		FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A95296D531D008AD1B5 /* HomeMbtiTypesDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB464A742966C2C0008AD1B5 /* WeAre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeAre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB464A772966C2C0008AD1B5 /* WeAreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeAreApp.swift; sourceTree = "<group>"; };
-		FB464A792966C2C0008AD1B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB464A792966C2C0008AD1B5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		FB464A7B2966C2C1008AD1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB464A7E2966C2C1008AD1B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB464A85296BFC2B008AD1B5 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		FB464A89296BFCEC008AD1B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB464A8C296BFE18008AD1B5 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		FB464A8E296C011A008AD1B5 /* HomeMbtiTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMbtiTypes.swift; sourceTree = "<group>"; };
+		FB464A90296C0219008AD1B5 /* MbtiTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiTypes.swift; sourceTree = "<group>"; };
+		FB464A95296D531D008AD1B5 /* HomeMbtiTypesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMbtiTypesDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				FB464A772966C2C0008AD1B5 /* WeAreApp.swift */,
-				FB464A792966C2C0008AD1B5 /* ContentView.swift */,
+				FB464A92296C0362008AD1B5 /* Model */,
+				FB464A88296BFCCC008AD1B5 /* Scenes */,
 				FB464A7B2966C2C1008AD1B5 /* Assets.xcassets */,
 				FB464A7D2966C2C1008AD1B5 /* Preview Content */,
 			);
@@ -65,6 +78,43 @@
 				FB464A7E2966C2C1008AD1B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB464A87296BFCC4008AD1B5 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				FB464A792966C2C0008AD1B5 /* MainTabView.swift */,
+				FB464A85296BFC2B008AD1B5 /* Tab.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		FB464A88296BFCCC008AD1B5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB464A87296BFCC4008AD1B5 /* Tab */,
+				FB464A8B296BFD61008AD1B5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FB464A8B296BFD61008AD1B5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FB464A89296BFCEC008AD1B5 /* HomeView.swift */,
+				FB464A8C296BFE18008AD1B5 /* HomeHeaderView.swift */,
+				FB464A8E296C011A008AD1B5 /* HomeMbtiTypes.swift */,
+				FB464A95296D531D008AD1B5 /* HomeMbtiTypesDetail.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FB464A92296C0362008AD1B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB464A90296C0219008AD1B5 /* MbtiTypes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB464A7A2966C2C0008AD1B5 /* ContentView.swift in Sources */,
+				FB464A8F296C011A008AD1B5 /* HomeMbtiTypes.swift in Sources */,
+				FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */,
+				FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */,
+				FB464A8D296BFE18008AD1B5 /* HomeHeaderView.swift in Sources */,
+				FB464A8A296BFCEC008AD1B5 /* HomeView.swift in Sources */,
+				FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */,
 				FB464A782966C2C0008AD1B5 /* WeAreApp.swift in Sources */,
+				FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
