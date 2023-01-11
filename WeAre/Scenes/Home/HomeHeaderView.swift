@@ -13,7 +13,7 @@ struct HomeHeaderView: View {
             Text("WeAre")
                 .font(.largeTitle)
             Spacer()
-            Button(action: {}, label: {
+            NavigationLink(destination: AddNewFriendView(), label: {
                 Image(systemName: "person.fill.badge.plus")
                     .font(.system(size: 22.0))
             })

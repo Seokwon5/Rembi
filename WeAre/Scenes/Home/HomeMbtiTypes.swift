@@ -12,19 +12,19 @@ struct HomeMbtiTypes: View {
     let columns = [
         GridItem(.adaptive(minimum: 80))
     ]
-
+    
     var body: some View {
         
-            LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(MbtiTypes.mbtiType) { mbti in
-                    NavigationLink {
-                        HomeMbtiTypesDetail()
-                    } label: {
-                        HomeMbtiItemView(mbtiType: mbti)
-                    }
-                
-           }
+        LazyVGrid(columns: columns, spacing: 20) {
+            ForEach(MbtiTypes.mbtiType) { mbti in
+                NavigationLink {
+                    HomeMbtiTypesDetail()
+                } label: {
+                    HomeMbtiItemView(mbtiType: mbti)
+                }
+            }
         }
+        .padding(16.0)
     }
 }
 
