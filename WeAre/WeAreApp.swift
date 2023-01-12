@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct WeAreApp: App {
+    @StateObject var store = PeopleInfoStore()
     var body: some Scene {
         WindowGroup {
             MainTabView()
+                .environmentObject(store)
         }
     }
 }

@@ -21,6 +21,8 @@
 		FB464A9B296EE2B7008AD1B5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB464A99296EE2B7008AD1B5 /* Model.xcdatamodeld */; };
 		FB464AA0296EE3FE008AD1B5 /* PeopleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A9F296EE3FE008AD1B5 /* PeopleInfo.swift */; };
 		FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */; };
+		FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805081296EEF3D00504BF3 /* PeopleView.swift */; };
+		FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805084296FE5F700504BF3 /* PeopleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		FB464A9A296EE2B7008AD1B5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FB464A9F296EE3FE008AD1B5 /* PeopleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfo.swift; sourceTree = "<group>"; };
 		FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoStore.swift; sourceTree = "<group>"; };
+		FB805081296EEF3D00504BF3 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		FB805084296FE5F700504BF3 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				FB464A87296BFCC4008AD1B5 /* Tab */,
 				FB464A8B296BFD61008AD1B5 /* Home */,
+				FB805083296EEF4700504BF3 /* People */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -135,6 +140,15 @@
 				FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		FB805083296EEF4700504BF3 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				FB805081296EEF3D00504BF3 /* PeopleView.swift */,
+				FB805084296FE5F700504BF3 /* PeopleCell.swift */,
+			);
+			path = People;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +223,13 @@
 			files = (
 				FB464AA0296EE3FE008AD1B5 /* PeopleInfo.swift in Sources */,
 				FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */,
+				FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */,
 				FB464A8F296C011A008AD1B5 /* HomeMbtiTypes.swift in Sources */,
 				FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */,
 				FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */,
 				FB464A8D296BFE18008AD1B5 /* HomeHeaderView.swift in Sources */,
 				FB464A8A296BFCEC008AD1B5 /* HomeView.swift in Sources */,
+				FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */,
 				FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */,
 				FB464A9B296EE2B7008AD1B5 /* Model.xcdatamodeld in Sources */,
 				FB464A782966C2C0008AD1B5 /* WeAreApp.swift in Sources */,

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddNewFriendView: View {
 
-    var body: some View {
+    var body: some View { 
             Text("plus")
             .navigationTitle("친구 추가")
             .toolbar {

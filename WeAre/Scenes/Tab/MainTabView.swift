@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @EnvironmentObject var store: PeopleInfoStore
+    
     var body: some View {
         TabView {
             HomeView()
@@ -15,7 +17,7 @@ struct MainTabView: View {
                     Tab.home.imageItem
                     Tab.home.textItem
                 }
-            Text("people")
+            PeopleView()
                 .tabItem {
                     Tab.people.imageItem
                     Tab.people.textItem
@@ -27,5 +29,6 @@ struct MainTabView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
+            .environmentObject(PeopleInfoStore())
     }
 }

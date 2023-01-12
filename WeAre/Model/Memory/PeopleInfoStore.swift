@@ -12,28 +12,28 @@ class PeopleInfoStore: ObservableObject {
     
     init() {
         list = [
-            PeopleInfo(mbti: "intp", name: "lee"),
-            PeopleInfo(mbti: "entp", name: "kim"),
-            PeopleInfo(mbti: "infj", name: "jang")
+            PeopleInfo(mbti: "intp", name: "이석원"),
+            PeopleInfo(mbti: "entp", name: "이병헌"),
+            PeopleInfo(mbti: "infj", name: "박보영")
         ]
     }
     
-    func insert(post: String) {
-        list.insert(PeopleInfo(mbti: post, name: post), at: 0)
+    func insert(memo: String) {
+        list.insert(PeopleInfo(mbti: memo, name: memo), at: 0)
     }
     
-    func update(post: PeopleInfo?, mbti: String, name:String) {
-        guard let post = post else {
+    func update(memo: PeopleInfo?, mbti: String, name:String) {
+        guard let memo = memo else {
             return
         }
         
-        post.name = name
-        post.mbti = mbti
+        memo.name = name
+        memo.mbti = mbti
     }
     
-    func delete(post: PeopleInfo) {
+    func delete(memo: PeopleInfo) {
         list.removeAll {
-            $0.id == post.id
+            $0.id == memo.id
         }
     }
     
