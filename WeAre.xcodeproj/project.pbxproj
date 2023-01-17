@@ -23,6 +23,7 @@
 		FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */; };
 		FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805081296EEF3D00504BF3 /* PeopleView.swift */; };
 		FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805084296FE5F700504BF3 /* PeopleCell.swift */; };
+		FB805087297693F400504BF3 /* PeopleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805086297693F400504BF3 /* PeopleDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoStore.swift; sourceTree = "<group>"; };
 		FB805081296EEF3D00504BF3 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		FB805084296FE5F700504BF3 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
+		FB805086297693F400504BF3 /* PeopleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				FB805081296EEF3D00504BF3 /* PeopleView.swift */,
 				FB805084296FE5F700504BF3 /* PeopleCell.swift */,
+				FB805086297693F400504BF3 /* PeopleDetailView.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */,
 				FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */,
 				FB464A8F296C011A008AD1B5 /* HomeMbtiTypes.swift in Sources */,
+				FB805087297693F400504BF3 /* PeopleDetailView.swift in Sources */,
 				FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */,
 				FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */,
 				FB464A8D296BFE18008AD1B5 /* HomeHeaderView.swift in Sources */,

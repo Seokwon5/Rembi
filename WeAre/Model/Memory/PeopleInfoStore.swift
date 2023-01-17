@@ -10,30 +10,32 @@ import Foundation
 class PeopleInfoStore: ObservableObject {
     @Published var list: [PeopleInfo]
     
+    
+    
     init() {
         list = [
             PeopleInfo(mbti: "intp", name: "이석원"),
-            PeopleInfo(mbti: "entp", name: "이병헌"),
-            PeopleInfo(mbti: "infj", name: "박보영")
+            PeopleInfo(mbti: "entp", name: "김민규"),
+            PeopleInfo(mbti: "infj", name: "한승주")
         ]
     }
     
-    func insert(memo: String) {
-        list.insert(PeopleInfo(mbti: memo, name: memo), at: 0)
+    func insert(mbti: String, name: String) {
+        list.insert(PeopleInfo(mbti: mbti, name: name), at: 0)
     }
     
-    func update(memo: PeopleInfo?, mbti: String, name:String) {
-        guard let memo = memo else {
+    func update(info: PeopleInfo?, mbti: String, name:String) {
+        guard let info = info else {
             return
         }
         
-        memo.name = name
-        memo.mbti = mbti
+        info.name = name
+        info.mbti = mbti
     }
     
-    func delete(memo: PeopleInfo) {
+    func delete(info: PeopleInfo) {
         list.removeAll {
-            $0.id == memo.id
+            $0.id == info.id
         }
     }
     

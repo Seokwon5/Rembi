@@ -10,8 +10,10 @@ import SwiftUI
 struct HomeMbtiTypesDetail: View {
     var body: some View {
         VStack {
-            Text("hi")
+            
         }
+        .navigationTitle("MBTI")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

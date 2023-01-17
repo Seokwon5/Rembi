@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct PeopleCell: View {
-    @ObservedObject var memo: PeopleInfo
+    @ObservedObject var info: PeopleInfo
     
     var body: some View {
         HStack {
-            Text(memo.name)
+            Text(info.name)
                 .font(.title3)
                 .lineLimit(1)
-            Spacer()
-            Text(memo.mbti)
+            Text(info.mbti)
                 .font(.caption)
+            Spacer()
         }
     }
 }
 
 struct PeopleCell_Previews: PreviewProvider {
     static var previews: some View {
-        PeopleCell(memo: PeopleInfo(mbti: "intp", name: "정우성"))
+        PeopleCell(info: PeopleInfo(mbti: "intp", name: "정우성"))
     }
 }

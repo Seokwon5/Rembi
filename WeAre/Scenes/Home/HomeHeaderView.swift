@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    
+    @State private var showComposer: Bool = false
+    
+    
     var body: some View {
-        HStack {
-            Text("WeAre")
-                .font(.largeTitle)
-            Spacer()
-            NavigationLink(destination: AddNewFriendView(), label: {
+        HStack{
+            Image(systemName: "person.2.wave.2.fill")
+        }
+        .navigationTitle("WEARE")
+        .toolbar {
+            Button {
+                showComposer = true
+            } label: {
                 Image(systemName: "person.fill.badge.plus")
-                    .font(.system(size: 22.0))
-            })
-        }.padding(16.0)
+            }
+        }
+        .sheet(isPresented: $showComposer) {
+            AddNewFriendView()
+                .padding(16.0)
+            
+        }
     }
 }
 
