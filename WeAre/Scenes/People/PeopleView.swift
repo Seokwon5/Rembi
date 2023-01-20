@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct PeopleView: View {
-    @EnvironmentObject var store: PeopleInfoStore
+    @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.name)]) var info: FetchedResults<PeopleInfo>
     
     @State private var showComposer: Bool = false
 
     var body: some View {
         NavigationView{
-            List(store.list) { info in
-                NavigationLink {
-                    PeopleDetailView(info: info)
-                } label: {
-                    PeopleCell(info: info)
+            List{
+                ForEach(info) { info in
+                    HStack {
+                        NavigationLink {
+                            PeopleDetailView(info: info)
+                        } label: {
+                            HStack {
+                                Text(info.name!)
+                                    .font(.title3)
+                                    .lineLimit(1)
+                                Text(info.mbti!)
+                                    .font(.caption)
+                                Spacer()
+                            }
+                       }
                     }
-
+                }
             }
             .listStyle(.plain)
             .navigationTitle("친구 목록")
@@ -42,7 +53,6 @@ struct PeopleView: View {
 struct PeopleView_Previews: PreviewProvider {
     static var previews: some View {
         PeopleView()
-            .environmentObject(PeopleInfoStore())
     }
 }
 

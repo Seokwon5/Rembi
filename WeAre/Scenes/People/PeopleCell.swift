@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct PeopleCell: View {
-    @ObservedObject var info: PeopleInfo
+    @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.name, order: .reverse)]) var info: FetchedResults<PeopleInfo>
     
     var body: some View {
-        HStack {
-            Text(info.name)
-                .font(.title3)
-                .lineLimit(1)
-            Text(info.mbti)
-                .font(.caption)
-            Spacer()
+        ForEach(info) { info in
+            HStack {
+                    Text(info.name!)
+                        .font(.title3)
+                        .lineLimit(1)
+                    Text(info.mbti!)
+                        .font(.caption)
+                    Spacer()
+            }
         }
     }
 }
 
 struct PeopleCell_Previews: PreviewProvider {
     static var previews: some View {
-        PeopleCell(info: PeopleInfo(mbti: "intp", name: "정우성"))
+        PeopleCell()
     }
 }

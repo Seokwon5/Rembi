@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct WeAreApp: App {
-    @StateObject var store = PeopleInfoStore()
+    @StateObject private var peopleInfoStore = PeopleInfoStore()
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()
-                .environmentObject(store)
+                .environment(\.managedObjectContext, peopleInfoStore.container.viewContext)
         }
     }
 }
+
+
+

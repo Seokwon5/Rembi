@@ -18,12 +18,13 @@
 		FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A90296C0219008AD1B5 /* MbtiTypes.swift */; };
 		FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A95296D531D008AD1B5 /* HomeMbtiTypesDetail.swift */; };
 		FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A97296EC539008AD1B5 /* AddNewFriendView.swift */; };
-		FB464A9B296EE2B7008AD1B5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB464A99296EE2B7008AD1B5 /* Model.xcdatamodeld */; };
-		FB464AA0296EE3FE008AD1B5 /* PeopleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A9F296EE3FE008AD1B5 /* PeopleInfo.swift */; };
 		FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */; };
 		FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805081296EEF3D00504BF3 /* PeopleView.swift */; };
 		FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805084296FE5F700504BF3 /* PeopleCell.swift */; };
 		FB805087297693F400504BF3 /* PeopleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805086297693F400504BF3 /* PeopleDetailView.swift */; };
+		FB80508F2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB80508C2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld */; };
+		FB805092297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */; };
+		FB805093297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +40,14 @@
 		FB464A90296C0219008AD1B5 /* MbtiTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbtiTypes.swift; sourceTree = "<group>"; };
 		FB464A95296D531D008AD1B5 /* HomeMbtiTypesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMbtiTypesDetail.swift; sourceTree = "<group>"; };
 		FB464A97296EC539008AD1B5 /* AddNewFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFriendView.swift; sourceTree = "<group>"; };
-		FB464A9A296EE2B7008AD1B5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		FB464A9F296EE3FE008AD1B5 /* PeopleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfo.swift; sourceTree = "<group>"; };
 		FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoStore.swift; sourceTree = "<group>"; };
 		FB805081296EEF3D00504BF3 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		FB805084296FE5F700504BF3 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		FB805086297693F400504BF3 /* PeopleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailView.swift; sourceTree = "<group>"; };
+		FB80508D2978072C00504BF3 /* PeopleInfoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleInfoModel.xcdatamodel; sourceTree = "<group>"; };
+		FB80508E2978072C00504BF3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		FB464A6B2966C2C0008AD1B5 = {
 			isa = PBXGroup;
 			children = (
+				FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */,
+				FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */,
 				FB464A762966C2C0008AD1B5 /* WeAre */,
 				FB464A752966C2C0008AD1B5 /* Products */,
 			);
@@ -81,7 +86,6 @@
 				FB464A92296C0362008AD1B5 /* Model */,
 				FB464A88296BFCCC008AD1B5 /* Scenes */,
 				FB464A7B2966C2C1008AD1B5 /* Assets.xcassets */,
-				FB464A99296EE2B7008AD1B5 /* Model.xcdatamodeld */,
 				FB464A7D2966C2C1008AD1B5 /* Preview Content */,
 			);
 			path = WeAre;
@@ -130,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				FB464AA3296EE5E7008AD1B5 /* Memory */,
-				FB464A90296C0219008AD1B5 /* MbtiTypes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 		FB464AA3296EE5E7008AD1B5 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
-				FB464A9F296EE3FE008AD1B5 /* PeopleInfo.swift */,
+				FB464A90296C0219008AD1B5 /* MbtiTypes.swift */,
 				FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */,
+				FB80508C2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -148,8 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				FB805081296EEF3D00504BF3 /* PeopleView.swift */,
-				FB805084296FE5F700504BF3 /* PeopleCell.swift */,
 				FB805086297693F400504BF3 /* PeopleDetailView.swift */,
+				FB805084296FE5F700504BF3 /* PeopleCell.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -224,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB464AA0296EE3FE008AD1B5 /* PeopleInfo.swift in Sources */,
 				FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */,
 				FB805085296FE5F700504BF3 /* PeopleCell.swift in Sources */,
 				FB464A8F296C011A008AD1B5 /* HomeMbtiTypes.swift in Sources */,
@@ -232,10 +235,12 @@
 				FB464A96296D531D008AD1B5 /* HomeMbtiTypesDetail.swift in Sources */,
 				FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */,
 				FB464A8D296BFE18008AD1B5 /* HomeHeaderView.swift in Sources */,
+				FB805092297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift in Sources */,
 				FB464A8A296BFCEC008AD1B5 /* HomeView.swift in Sources */,
 				FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */,
+				FB805093297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift in Sources */,
 				FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */,
-				FB464A9B296EE2B7008AD1B5 /* Model.xcdatamodeld in Sources */,
+				FB80508F2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld in Sources */,
 				FB464A782966C2C0008AD1B5 /* WeAreApp.swift in Sources */,
 				FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */,
 				FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */,
@@ -441,13 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FB464A99296EE2B7008AD1B5 /* Model.xcdatamodeld */ = {
+		FB80508C2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FB464A9A296EE2B7008AD1B5 /* Model.xcdatamodel */,
+				FB80508D2978072C00504BF3 /* PeopleInfoModel.xcdatamodel */,
+				FB80508E2978072C00504BF3 /* Model.xcdatamodel */,
 			);
-			currentVersion = FB464A9A296EE2B7008AD1B5 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = FB80508D2978072C00504BF3 /* PeopleInfoModel.xcdatamodel */;
+			path = PeopleInfoModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

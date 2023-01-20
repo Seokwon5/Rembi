@@ -8,25 +8,33 @@
 import SwiftUI
 
 struct PeopleDetailView: View {
+//    @Environment(\.managedObjectContext) var managedObjContext
+    
     @ObservedObject var info: PeopleInfo
     
-    @EnvironmentObject var store : PeopleInfoStore
+    @State private var showComposer: Bool = false
+
     
     var body: some View {
         VStack {
             ScrollView {
-                VStack {
-                    Text(info.name)
-                    Text(info.mbti)
-                }
+                    HStack {
+                        VStack(alignment: .leading, spacing: 10.0){
+                            Text(info.name!)
+                                .bold()
+                            Text(info.mbti!)
+                        }
+                        .padding(16.0)
+                        Spacer()
+                    }
+                
             }
         }
     }
 }
 
-struct PeopleDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        PeopleDetailView(info: PeopleInfo(mbti: "INTP", name: "이석원"))
-            .environmentObject(PeopleInfoStore())
-    }
-}
+//struct PeopleDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PeopleDetailView()
+//    }
+//}

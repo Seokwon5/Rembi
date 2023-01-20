@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct AddNewFriendView: View {
-    @EnvironmentObject var store: PeopleInfoStore
-    
+    @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
     @FocusState var focused: Bool
@@ -19,22 +18,18 @@ struct AddNewFriendView: View {
 
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading){
-                Text("이름").padding()
-                    TextEditor(text: $name)
+            Form {
+                TextField("이름",text: $name)
                     .focused($focused)
-                    .border(.gray.opacity(0.2),width: 2)
-                    Text("mbti").padding()
-                    TextEditor(text: $mbti)
+                TextField("MBTI", text: $mbti)
                     .focused($focused)
-                    .border(.gray.opacity(0.2),width: 2)
                 }
             .navigationTitle("새 친구 등록")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        store.insert(mbti: mbti, name: name)
+                        PeopleInfoStore().insert(mbti: mbti, name: name, context: managedObjContext)
                         
                         dismiss()
                     } label: {
