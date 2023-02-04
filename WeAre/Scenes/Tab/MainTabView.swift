@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+
+
 struct MainTabView: View {
-    @EnvironmentObject var store: PeopleInfoStore
-    
+
     var body: some View {
         TabView {
             HomeView()
@@ -29,6 +30,5 @@ struct MainTabView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
-            .environmentObject(PeopleInfoStore())
     }
 }

@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct PeopleDetailView: View {
-//    @Environment(\.managedObjectContext) var managedObjContext
     
-    @ObservedObject var info: PeopleInfo
+    @Environment(\.managedObjectContext) var managedObjContext
+    @State var info : PeopleInfo
     
-    @State private var showComposer: Bool = false
 
     
+    @State private var showComposer: Bool = false
+    
+    
     var body: some View {
-        VStack {
-            ScrollView {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 10.0){
-                            Text(info.name!)
-                                .bold()
-                            Text(info.mbti!)
-                        }
-                        .padding(16.0)
-                        Spacer()
-                    }
-                
+        
+        VStack(alignment: .leading, spacing: 10.0){
+            Text(info.name!)
+                .bold()
+            Text(info.mbti!)
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button {
+                    showComposer = true
+                } label: {
+                    Image(systemName: "square.and.pencil.circle")
+                }
             }
+        }
+        .sheet(isPresented: $showComposer) {
+            EditInfoView(info: info)
         }
     }
 }
-
-//struct PeopleDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PeopleDetailView()
-//    }
-//}

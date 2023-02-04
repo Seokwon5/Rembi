@@ -14,8 +14,8 @@ struct WeAreApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainTabView()
-                .environment(\.managedObjectContext, peopleInfoStore.container.viewContext)
+            MainTabView().environment(\.managedObjectContext, peopleInfoStore.container.viewContext)
+              
         }
     }
 }

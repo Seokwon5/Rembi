@@ -9,16 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
 
+    
     var body: some View {
         NavigationView {
             VStack {
-                HomeHeaderView()
-                ScrollView(.vertical) {
-                    HomeMbtiTypes()
-                }
+                Text("hi")
             }
         }
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
@@ -26,3 +25,7 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+        
+    
+
+

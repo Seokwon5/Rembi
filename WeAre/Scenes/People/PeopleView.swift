@@ -9,46 +9,64 @@ import SwiftUI
 
 struct PeopleView: View {
     @Environment(\.managedObjectContext) var managedObjContext
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.name)]) var info: FetchedResults<PeopleInfo>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.mbti)]) var info: FetchedResults<PeopleInfo>
+    
     
     @State private var showComposer: Bool = false
+    
 
     var body: some View {
         NavigationView{
             List{
                 ForEach(info) { info in
-                    HStack {
+                    HStack { 
                         NavigationLink {
                             PeopleDetailView(info: info)
                         } label: {
                             HStack {
-                                Text(info.name!)
+                                Text(info.name ?? "")
                                     .font(.title3)
                                     .lineLimit(1)
-                                Text(info.mbti!)
+                                Text(info.mbti ?? "")
                                     .font(.caption)
                                 Spacer()
                             }
-                       }
+                        }
+
                     }
                 }
+                .onDelete(perform: deleteInfo)
             }
             .listStyle(.plain)
             .navigationTitle("친구 목록")
             .toolbar {
-                Button {
-                    showComposer = true
-                } label: {
-                    Image(systemName: "person.fill.badge.plus")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showComposer = true
+                    } label: {
+                        Image(systemName: "person.fill.badge.plus")
+                    }
                 }
-                
             }
             .sheet(isPresented: $showComposer) {
                 AddNewFriendView()
             }
+            
+            
+        }
+        
+    }
+    
+    private func deleteInfo(offsets: IndexSet) {
+        withAnimation {
+            offsets.map { info[$0] }.forEach(managedObjContext.delete)
+            
+            PeopleInfoStore().save(context: managedObjContext)
         }
     }
 }
+
+
 
 struct PeopleView_Previews: PreviewProvider {
     static var previews: some View {
