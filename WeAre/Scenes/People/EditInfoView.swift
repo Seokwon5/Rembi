@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct EditInfoView: View {
-
-    var info : FetchedResults<PeopleInfo>.Element
+    
+    @State var info : PeopleInfo
     
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
-    
-    
+
     @FocusState var focused: Bool
     
     @State private var name: String = ""
@@ -41,7 +40,7 @@ struct EditInfoView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button("저장") {
                         PeopleInfoStore().editInfo(info: info, name: name, mbti: mbti, context: managedObjContext)
-                       
+                        
                         dismiss()
                     }
                 }
@@ -53,10 +52,9 @@ struct EditInfoView: View {
                     }
                 }
             }
-            
+  
         }
         
+        
     }
-    
-    
 }

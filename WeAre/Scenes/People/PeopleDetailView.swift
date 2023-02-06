@@ -7,34 +7,34 @@
 
 import SwiftUI
 
+
 struct PeopleDetailView: View {
     
-    @Environment(\.managedObjectContext) var managedObjContext
-    @State var info : PeopleInfo
-    
-
+    @StateObject var info = PeopleInfo()
     
     @State private var showComposer: Bool = false
     
     
     var body: some View {
-        
-        VStack(alignment: .leading, spacing: 10.0){
-            Text(info.name!)
-                .bold()
-            Text(info.mbti!)
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button {
-                    showComposer = true
-                } label: {
-                    Image(systemName: "square.and.pencil.circle")
+        List() {
+            VStack(alignment: .leading, spacing: 10.0){
+
+                Text(info.mbti!)
+    
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
+                        showComposer = true
+                    } label: {
+                        Image(systemName: "square.and.pencil.circle")
+                    }
                 }
             }
+            .sheet(isPresented: $showComposer) {
+                EditInfoView(info: info)
+            }
         }
-        .sheet(isPresented: $showComposer) {
-            EditInfoView(info: info)
-        }
+        .navigationTitle(info.name!)
     }
 }

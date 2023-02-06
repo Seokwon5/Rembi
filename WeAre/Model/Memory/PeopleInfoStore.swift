@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-class PeopleInfoStore : ObservableObject {
+class PeopleInfoStore : ObservableObject{
     let container = NSPersistentContainer(name:"PeopleInfoModel")
     
     
@@ -46,19 +46,18 @@ class PeopleInfoStore : ObservableObject {
         save(context: context)
         
         
-        func delete(info: PeopleInfo){
+    }
+        
+    func delete(info: PeopleInfo){
             
-            container.viewContext.delete(info)
+        container.viewContext.delete(info)
             
-            do {
-                try container.viewContext.save()
-            } catch {
-                container.viewContext.rollback()
-                print("Failed to save context \(error)")
-            }
+        do {
+            try container.viewContext.save()
+           } catch {
+            container.viewContext.rollback()
+            print("Failed to save context \(error)")
         }
-        
-        
     }
     
 }
