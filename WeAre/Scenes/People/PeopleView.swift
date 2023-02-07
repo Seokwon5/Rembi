@@ -32,7 +32,6 @@ struct PeopleView: View {
                                 Spacer()
                             }
                         }
-
                     }
                 }
                 .onDelete(perform: deleteInfo)

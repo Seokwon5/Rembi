@@ -50,6 +50,12 @@ struct AddNewFriendView: View {
         
     }
     
+    struct AddNewFriendView_Previews: PreviewProvider {
+        static var previews: some View {
+            AddNewFriendView()
+        }
+    }
+    
     
 }
 
