@@ -22,6 +22,8 @@
 		FB805092297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */; };
 		FB805093297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */; };
 		FB8050BC298D29E700504BF3 /* EditInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8050BB298D29E700504BF3 /* EditInfoView.swift */; };
+		FB8050BE2992318D00504BF3 /* AddMbtiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8050BD2992318D00504BF3 /* AddMbtiView.swift */; };
+		FB8050C029939B6D00504BF3 /* HomeMbtiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8050BF29939B6D00504BF3 /* HomeMbtiDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB8050BB298D29E700504BF3 /* EditInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInfoView.swift; sourceTree = "<group>"; };
+		FB8050BD2992318D00504BF3 /* AddMbtiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMbtiView.swift; sourceTree = "<group>"; };
+		FB8050BF29939B6D00504BF3 /* HomeMbtiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMbtiDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				FB464A89296BFCEC008AD1B5 /* HomeView.swift */,
+				FB8050BF29939B6D00504BF3 /* HomeMbtiDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				FB805086297693F400504BF3 /* PeopleDetailView.swift */,
 				FB464A97296EC539008AD1B5 /* AddNewFriendView.swift */,
 				FB8050BB298D29E700504BF3 /* EditInfoView.swift */,
+				FB8050BD2992318D00504BF3 /* AddMbtiView.swift */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -229,8 +235,10 @@
 				FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */,
 				FB80508F2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld in Sources */,
 				FB464A782966C2C0008AD1B5 /* WeAreApp.swift in Sources */,
+				FB8050BE2992318D00504BF3 /* AddMbtiView.swift in Sources */,
 				FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */,
 				FB8050BC298D29E700504BF3 /* EditInfoView.swift in Sources */,
+				FB8050C029939B6D00504BF3 /* HomeMbtiDetailView.swift in Sources */,
 				FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

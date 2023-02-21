@@ -11,16 +11,17 @@ import CoreData
 class PeopleInfoStore : ObservableObject{
     let container = NSPersistentContainer(name:"PeopleInfoModel")
     
+
     
     init() {
-        
+      
         container.loadPersistentStores { desc, error in
             if let error = error {
                 print("Failed to load the data \(error.localizedDescription)")
             }
         }
     }
-    
+
     func save(context: NSManagedObjectContext) {
         do {
             try context.save()
@@ -33,19 +34,21 @@ class PeopleInfoStore : ObservableObject{
     func addInfo(name: String, mbti: String, context: NSManagedObjectContext) {
         let info = PeopleInfo(context: context)
         info.id = UUID()
+        info.date = Date()
         info.name = name
         info.mbti = mbti
         
+        
         save(context: context)
     }
+
     
     func editInfo(info: PeopleInfo,name: String, mbti: String, context: NSManagedObjectContext){
         info.name = name
         info.mbti = mbti
+        info.date = Date()
         
         save(context: context)
-        
-        
     }
         
     func delete(info: PeopleInfo){
@@ -60,4 +63,5 @@ class PeopleInfoStore : ObservableObject{
         }
     }
     
+        
 }

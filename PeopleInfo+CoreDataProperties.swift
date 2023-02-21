@@ -19,6 +19,7 @@ extension PeopleInfo {
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
     @NSManaged public var mbti: String?
+    @NSManaged public var date: Date?
 
 }
 

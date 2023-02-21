@@ -19,7 +19,7 @@ struct PeopleDetailView: View {
         List() {
             VStack(alignment: .leading, spacing: 10.0){
 
-                Text(info.mbti!)
+                Text(info.mbti ?? "")
     
             }
             .toolbar {
@@ -35,6 +35,6 @@ struct PeopleDetailView: View {
                 EditInfoView(info: info)
             }
         }
-        .navigationTitle(info.name!)
+        .navigationTitle(info.name ?? "")
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PeopleView: View {
     @Environment(\.managedObjectContext) var managedObjContext
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.mbti)]) var info: FetchedResults<PeopleInfo>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var info: FetchedResults<PeopleInfo>
     
     
     @State private var showComposer: Bool = false
@@ -44,6 +44,12 @@ struct PeopleView: View {
                         showComposer = true
                     } label: {
                         Image(systemName: "person.fill.badge.plus")
+                            .foregroundColor(.white)
+                            .frame(width: 60)
+                            .frame(height: 45)
+                            .background(Color(.black))
+                            .cornerRadius(10)
+                        
                     }
                 }
             }

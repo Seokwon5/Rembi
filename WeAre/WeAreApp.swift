@@ -12,9 +12,12 @@ import CoreData
 struct WeAreApp: App {
     @StateObject private var peopleInfoStore = PeopleInfoStore()
     
+
     var body: some Scene {
         WindowGroup {
             MainTabView().environment(\.managedObjectContext, peopleInfoStore.container.viewContext)
+            
+            
               
         }
     }

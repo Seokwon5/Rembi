@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct MbtiTypes: Identifiable {
-    let image: Image
-    let name: String
-    
+    var image: Image
+    var name: String
     let id = UUID()
    
     static let mbtiType: [MbtiTypes] = [
@@ -20,7 +19,7 @@ struct MbtiTypes: Identifiable {
         MbtiTypes(image: Image("intp"), name: "INTJ"),
         MbtiTypes(image: Image("intp"), name: "ISTP"),
         MbtiTypes(image: Image("intp"), name: "ISFP"),
-        MbtiTypes(image: Image("intp"), name: "INFJ"),
+        MbtiTypes(image: Image("intp"), name: "INFP"),
         MbtiTypes(image: Image("intp"), name: "INTP"),
         MbtiTypes(image: Image("intp"), name: "ESTP"),
         MbtiTypes(image: Image("intp"), name: "ESFP"),
@@ -32,5 +31,10 @@ struct MbtiTypes: Identifiable {
         MbtiTypes(image: Image("intp"), name: "ENFJ")
         
     ]
+    
+    init(image: Image, name: String) {
+        self.image = image
+        self.name = name
+    }
 
 }
