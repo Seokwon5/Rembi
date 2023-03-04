@@ -1,6 +1,6 @@
 //
 //  PeopleInfo+CoreDataProperties.swift
-//  WeAre
+//  Rembi
 //
 //  Created by 이석원 on 2023/01/18.
 //
@@ -20,6 +20,10 @@ extension PeopleInfo {
     @NSManaged public var name: String?
     @NSManaged public var mbti: String?
     @NSManaged public var date: Date?
+    @NSManaged public var tab1: String?
+    @NSManaged public var tab2: String?
+    @NSManaged public var tab3: String?
+    @NSManaged public var tab4: String?
 
 }
 

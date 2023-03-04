@@ -1,6 +1,6 @@
 //
 //  PeopleInfo+CoreDataClass.swift
-//  WeAre
+//  Rembi
 //
 //  Created by 이석원 on 2023/01/18.
 //
