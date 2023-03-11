@@ -16,6 +16,9 @@
 		FB464A91296C0219008AD1B5 /* MbtiTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A90296C0219008AD1B5 /* MbtiTypes.swift */; };
 		FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464A97296EC539008AD1B5 /* AddNewFriendView.swift */; };
 		FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */; };
+		FB597C8229BB3A7C006F283D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB597C8129BB3A7C006F283D /* SplashView.swift */; };
+		FB597C8E29BB4987006F283D /* FrameExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB597C8D29BB4987006F283D /* FrameExtenstion.swift */; };
+		FB597C9529BCB37A006F283D /* MbitiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB597C9429BCB37A006F283D /* MbitiInfo.swift */; };
 		FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805081296EEF3D00504BF3 /* PeopleView.swift */; };
 		FB805087297693F400504BF3 /* PeopleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB805086297693F400504BF3 /* PeopleDetailView.swift */; };
 		FB80508F2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB80508C2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld */; };
@@ -37,6 +40,9 @@
 		FB464A97296EC539008AD1B5 /* AddNewFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFriendView.swift; sourceTree = "<group>"; };
 		FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInfoStore.swift; sourceTree = "<group>"; };
 		FB52CAC929B0C492000F412A /* dsaasd.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = dsaasd.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FB597C8129BB3A7C006F283D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FB597C8D29BB4987006F283D /* FrameExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtenstion.swift; sourceTree = "<group>"; };
+		FB597C9429BCB37A006F283D /* MbitiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MbitiInfo.swift; sourceTree = "<group>"; };
 		FB805081296EEF3D00504BF3 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		FB805086297693F400504BF3 /* PeopleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailView.swift; sourceTree = "<group>"; };
 		FB80508D2978072C00504BF3 /* PeopleInfoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleInfoModel.xcdatamodel; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 			children = (
 				FB805090297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift */,
 				FB805091297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift */,
+				FB597C8629BB4969006F283D /* Extentions */,
 				FB464A762966C2C0008AD1B5 /* Rembi */,
 				FB464A752966C2C0008AD1B5 /* Products */,
 			);
@@ -79,7 +86,10 @@
 		FB464A762966C2C0008AD1B5 /* Rembi */ = {
 			isa = PBXGroup;
 			children = (
+				FB597C8B29BB4986006F283D /* Extentions */,
+				FB597C8329BB44DA006F283D /* Data */,
 				FB464A772966C2C0008AD1B5 /* RembiApp.swift */,
+				FB597C8129BB3A7C006F283D /* SplashView.swift */,
 				FB464A92296C0362008AD1B5 /* Model */,
 				FB464A88296BFCCC008AD1B5 /* Scenes */,
 				FB464A7B2966C2C1008AD1B5 /* Assets.xcassets */,
@@ -136,10 +146,34 @@
 			isa = PBXGroup;
 			children = (
 				FB464A90296C0219008AD1B5 /* MbtiTypes.swift */,
+				FB597C9429BCB37A006F283D /* MbitiInfo.swift */,
 				FB464AA1296EE5DA008AD1B5 /* PeopleInfoStore.swift */,
 				FB80508C2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld */,
 			);
 			path = Memory;
+			sourceTree = "<group>";
+		};
+		FB597C8329BB44DA006F283D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB597C8629BB4969006F283D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extentions;
+			path = "../../Downloads/강의자료-SwiftUIBasic/예제코드/02.AnimalKR/AnimalKR/Extentions";
+			sourceTree = "<group>";
+		};
+		FB597C8B29BB4986006F283D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FB597C8D29BB4987006F283D /* FrameExtenstion.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		FB805083296EEF4700504BF3 /* People */ = {
@@ -225,14 +259,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB464A98296EC539008AD1B5 /* AddNewFriendView.swift in Sources */,
+				FB597C8229BB3A7C006F283D /* SplashView.swift in Sources */,
 				FB805087297693F400504BF3 /* PeopleDetailView.swift in Sources */,
 				FB464A86296BFC2B008AD1B5 /* Tab.swift in Sources */,
 				FB805092297808AA00504BF3 /* PeopleInfo+CoreDataClass.swift in Sources */,
 				FB464A8A296BFCEC008AD1B5 /* HomeView.swift in Sources */,
 				FB805082296EEF3D00504BF3 /* PeopleView.swift in Sources */,
+				FB597C9529BCB37A006F283D /* MbitiInfo.swift in Sources */,
 				FB805093297808AA00504BF3 /* PeopleInfo+CoreDataProperties.swift in Sources */,
 				FB464A7A2966C2C0008AD1B5 /* MainTabView.swift in Sources */,
 				FB80508F2978072C00504BF3 /* PeopleInfoModel.xcdatamodeld in Sources */,
+				FB597C8E29BB4987006F283D /* FrameExtenstion.swift in Sources */,
 				FB464A782966C2C0008AD1B5 /* RembiApp.swift in Sources */,
 				FB464AA2296EE5DA008AD1B5 /* PeopleInfoStore.swift in Sources */,
 				FB8050BC298D29E700504BF3 /* EditInfoView.swift in Sources */,
@@ -383,6 +420,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,6 +451,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

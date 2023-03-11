@@ -2,7 +2,7 @@
 //  PeopleInfo+CoreDataProperties.swift
 //  Rembi
 //
-//  Created by 이석원 on 2023/01/18.
+//  Created by 이석원 on 2023/03/08.
 //
 //
 
@@ -16,10 +16,10 @@ extension PeopleInfo {
         return NSFetchRequest<PeopleInfo>(entityName: "PeopleInfo")
     }
 
-    @NSManaged public var id: UUID?
-    @NSManaged public var name: String?
-    @NSManaged public var mbti: String?
     @NSManaged public var date: Date?
+    @NSManaged public var id: UUID?
+    @NSManaged public var mbti: String?
+    @NSManaged public var name: String?
     @NSManaged public var tab1: String?
     @NSManaged public var tab2: String?
     @NSManaged public var tab3: String?
