@@ -21,10 +21,10 @@ struct SplashView: View {
             MainTabView()
         }else {
             VStack (spacing: 20.0) {
-                Image("intp")
+                Image("splashImg")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 150, height: 150)
+                    .frame(width: 200, height: 200)
             }
             .scaleEffect(size)
             .opacity(opacity)
@@ -33,7 +33,7 @@ struct SplashView: View {
                     size = 1.0
                     opacity = 1.0
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
                         isActive = true
                     }
                 }
