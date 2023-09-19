@@ -45,11 +45,6 @@
 ### 🏠 홈 화면
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/9b514f63-4ab7-41ad-bbcc-2e217a54d414" width = "200" height = "400">
 
-- ㅋㅋ
+- GridView를 생성하고 해당 cell의 상세뷰를 생성하였습니다.
+- 같은 mbti를 가진 친구들을 모아 볼 수 있도록 FetchRequest를 요청하는 과정에서 predicate메소드를 넣어 조건문을 생성하였습니다.
 
-#### TabBarController
-- 최근에 분류한 책들을 보기 위한 홈 화면과 책 전체를 다루는 서재 화면으로 나누었습니다
-#### CollectionView, TableView
-- '읽는 중'인 책은 CollectionView로 구현하였습니다
-- '다 읽은 책'은 TableView로 구현하였습니다
-- range메소드의 정규표현식을 이용하여 책 제목의 소괄호안의 글자를 삭제하였습니다
