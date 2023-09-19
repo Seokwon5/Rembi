@@ -15,9 +15,8 @@
 ### 📚 친구 목록 화면
 
 #### FilterButtonView
-<img src = "https://github.com/Seokwon5/Rembi/assets/77192860/7cd352e6-f7c5-4504-8684-4d14f478f83d" width = "200" height = "400">
-
-- 필터링 버튼뷰를 넣어 분류된 책을 따로 볼 수 있도록 구현하였습니다
+<img src = "https://github.com/Seokwon5/Rembi/assets/77192860/033de37b-1ef4-40f9-91af-c070c14e8603" width = "200" height = "400">
+- Picker를 이용하여 상태변수와 바인딩하여 리스트 순서를 변경하도록 구현하였습니다.
 
 #### 검색 화면
 <img src = "https://github.com/Seokwon5/PocketBook/assets/77192860/8ae9e57e-30b6-4fd9-9576-9324a55a635b" width = "200" height = "400">
