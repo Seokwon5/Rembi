@@ -24,21 +24,20 @@
 ### 수정 및 삭제
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/622d9f07-cf4a-4d2f-a436-3a08fc74666f" width = "200" height = "400">
 
--ㅇㄹㅇㄹㄴㄹㅇㅁ
--ㄴㅁㄹㅁㄴㄹㄴㅇㄹ
+- 수정 작업을 완료하면 NSPersistentContainer에 기존 데이터를 변경하여 저장하도록 구현하였습니다.
 
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/78e8ef5b-c237-4624-987a-275741ee5c10" width = "200" height = "400">
 
--ㅇㅁㄹㄴㅇㄹ
--ㄴㅇㄹㄴㄹㄴㅇ
-
+- 사용자가 해당 셀을 스와이프하면 인덱스를 찾아 삭제 메소드를 호출시키고 삭제하도록 구현하였습니다.
 
 #### AlertView
 - alertViewController를 생성하여 책 데이터의 상태를 구분하도록 구현하였습니다.
 - 삭제 버튼을 생성하고 프로토콜을 이용하여 저장된 데이터를 삭제하는 작업을 구현하였습니다.
 
 ### 🏠 홈 화면
-<img src = "https://github.com/Seokwon5/PocketBook/assets/77192860/6606873c-83ff-4843-9091-d3cfd7fb7926" width = "200" height = "400">
+<img src = "https://github.com/Seokwon5/Rembi/assets/77192860/9b514f63-4ab7-41ad-bbcc-2e217a54d414" width = "200" height = "400">
+
+- ㅋㅋ
 
 #### TabBarController
 - 최근에 분류한 책들을 보기 위한 홈 화면과 책 전체를 다루는 서재 화면으로 나누었습니다
