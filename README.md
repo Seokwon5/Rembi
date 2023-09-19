@@ -21,6 +21,17 @@
 
 #### 친구 추가 화면
 
+#### 친구 저장
+<img src = "https://github.com/Seokwon5/PocketBook/assets/77192860/cc185310-ffba-42da-875e-aa1981cf7771" width = "200" height = "400">
+
+- NSManagedObjectContext메소드를 이용하여 데이터를 저장하였습니다.
+- Picker를 이용하여 MBTI 저장을 편리하게 구현하였습니다.
+
+#### Alert
+<img src = "https://github.com/Seokwon5/Rembi/assets/77192860/ce2bbaa8-8bd4-4488-b80d-a3ea2e8df84f" width = "200" height = "400">
+
+- 이름을 입력하지 않은 경우 alert가 생성되어 빈값이 저장되지 않도록 구현하였습니다.
+
 ### 수정 및 삭제
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/622d9f07-cf4a-4d2f-a436-3a08fc74666f" width = "200" height = "400">
 
@@ -30,9 +41,6 @@
 
 - 사용자가 해당 셀을 스와이프하면 인덱스를 찾아 삭제 메소드를 호출시키고 삭제하도록 구현하였습니다.
 
-#### AlertView
-- alertViewController를 생성하여 책 데이터의 상태를 구분하도록 구현하였습니다.
-- 삭제 버튼을 생성하고 프로토콜을 이용하여 저장된 데이터를 삭제하는 작업을 구현하였습니다.
 
 ### 🏠 홈 화면
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/9b514f63-4ab7-41ad-bbcc-2e217a54d414" width = "200" height = "400">
