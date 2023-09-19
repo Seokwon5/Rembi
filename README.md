@@ -23,10 +23,12 @@
 
 ### 수정 및 삭제
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/622d9f07-cf4a-4d2f-a436-3a08fc74666f" width = "200" height = "400">
+
 -ㅇㄹㅇㄹㄴㄹㅇㅁ
 -ㄴㅁㄹㅁㄴㄹㄴㅇㄹ
 
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/78e8ef5b-c237-4624-987a-275741ee5c10" width = "200" height = "400">
+
 -ㅇㅁㄹㄴㅇㄹ
 -ㄴㅇㄹㄴㄹㄴㅇ
 
