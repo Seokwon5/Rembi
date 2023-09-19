@@ -16,6 +16,7 @@
 
 #### FilterButtonView
 <img src = "https://github.com/Seokwon5/Rembi/assets/77192860/033de37b-1ef4-40f9-91af-c070c14e8603" width = "200" height = "400">
+
 - Picker를 이용하여 상태변수와 바인딩하여 리스트 순서를 변경하도록 구현하였습니다.
 
 #### 검색 화면
